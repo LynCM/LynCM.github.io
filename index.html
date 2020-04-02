@@ -234,7 +234,7 @@
 
                 // Select map regions
                 let countries = svg.selectAll(".countrypath")
-                    .filter(function (data) {   // Set regions with matching color to red
+                    .filter(function (data) {   // Set regions with matching color to orange
                         return color(fertilityById[data.id]) === (color(d-0.0001));
                     })
                     .style("fill", "orange");
